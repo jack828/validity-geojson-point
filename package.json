@@ -1,5 +1,5 @@
 {
-  "name": "validity-geojson",
+  "name": "validity-geojson-point",
   "version": "1.0.0",
   "description": "A validity style validator for GeoJSON",
   "main": "validator.js",
