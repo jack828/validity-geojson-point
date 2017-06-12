@@ -16,7 +16,7 @@
     "url": "https://github.com/jack828/validity-geojson-point/issues"
   },
   "homepage": "https://github.com/jack828/validity-geojson-point#readme",
-  "dependencies": {
+  "devDependencies": {
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2"
   }
