@@ -44,4 +44,11 @@ describe('GeoJSON validator', function () {
       done()
     })
   })
+
+  it('should error when passed objects as coordinates', function (done) {
+    validator('location', 'Location', fixtures.invalidObjects, function (err, errors) {
+      assert.equal(errors, 'Location must be a valid GeoJSON Point')
+      done()
+    })
+  })
 })

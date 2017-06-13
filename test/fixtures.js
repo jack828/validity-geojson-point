@@ -25,8 +25,15 @@ module.exports =
   }
 , invalidOob:
   { location:
-    {
-      coordinates: [ 300, 300 ]
+    { type: 'Point'
+    , coordinates: [ 300, 300 ]
+    }
+  }
+, invalidObjects:
+  {
+    location:
+    { type: 'Point'
+    , coordinates: [ { a: 1 }, { b: 2 } ]
     }
   }
 , unknown:
