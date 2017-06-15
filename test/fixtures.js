@@ -5,6 +5,12 @@ module.exports =
     , coordinates: [ -0.439069, 51.6933176 ]
     }
   }
+, validZeroZero:
+  { location:
+    { type: 'Point'
+    , coordinates: [ 0, 0 ]
+    }
+  }
 , invalidNoType:
   { location:
     {

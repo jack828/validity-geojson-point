@@ -17,6 +17,13 @@ describe('GeoJSON validator', function () {
     })
   })
 
+ it('should validate valid (0, 0)', function (done) {
+    validator('location', 'Location', fixtures.validZeroZero, function (err, errors) {
+      assert.equal(errors, null)
+      done()
+    })
+  })
+
   it('should error on missing types', function (done) {
     validator('location', 'Location', fixtures.invalidNoType, function (err, errors) {
       assert.equal(errors, 'Location must be a valid GeoJSON Point')
